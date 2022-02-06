@@ -6,8 +6,7 @@ let express = require("express"),
 const router = express.Router();
 const User = require("../models/CertModel");
 
-
-var csv = require("fast-csv");
+const csv = require('csvtojson');
 const fs = require("fs");
 const obj = [];
 
@@ -63,14 +62,10 @@ router.post("/csv-upload", upload_csv.single("csv"), async (req, res, next) => {
     if (req.file === undefined)
       return res.status(404).send("You must select a file.");
 
-    var results = [];
-
-    const s3Stream = s3.getObject(params).createReadStream();
-    csv.fromStream(s3Stream)
-      .on("data", (data) => {
-        results.push(data);
-      });
-    res.status(200).send(results);
+    const stream = s3.getObject(params).createReadStream();
+    // convert csv file (stream) to JSON format data
+    const json = await csv().fromStream(stream);
+    res.status(200).send(json);
   } catch (e) {
     console.log(e);
   }
@@ -111,3 +106,4 @@ router.post(
 );
 
 module.exports = router;
+
