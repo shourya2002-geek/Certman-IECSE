@@ -252,7 +252,7 @@ export default function SingleImage(props) {
           const responseTwo = responses[1];
           const responseThree = responses[2];
 
-          setArr2(responseTwo);
+          
           console.log(responseOne.data);
           console.log(responseTwo.data);
           console.log(responseThree.data);
@@ -274,6 +274,7 @@ export default function SingleImage(props) {
       return;
     }
     arr2.map((element) => {
+      
       const elementCanvas = document.createElement("canvas");
       elementCanvas.setAttribute("ref", element.name);
       const canvasObj = canvasRef.current;

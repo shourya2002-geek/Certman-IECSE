@@ -1,3 +1,5 @@
+
+   
 export {};
 let express = require("express"),
   multer = require("multer"),
@@ -24,7 +26,7 @@ const upload = multer({
 
     key: function (req, file, cb) {
       const fileName = file.originalname.toLowerCase().split(" ").join("-");
-      cb(null, uuidv4() + "-" + fileName);
+      cb(null, "cert-uploads/"+uuidv4() + "-" + fileName);
     },
   }),
 });
