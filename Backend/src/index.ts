@@ -3,7 +3,7 @@ const express = require("express");
 
 const InitiateMongoServer = require("./config/db");
 const authRoute = require("./routes/auth");
-const certRoute = require("./routes/cert-temp.ts");
+const certRoute = require("./routes/cert.ts");
 const csvRoute = require("./routes/csv.ts");
 const sendMailRoute = require("./routes/sendmail.ts");
 
