@@ -119,7 +119,7 @@ router.post("/cert", async (req: any, res: any) => {
               context.font = "20px Arial";
               context.textAlign = "center";
               context.textBaseline = "top";
-              context.fillStyle = "black";
+              context.fillStyle = coordinates.color;
 
               if (type == "wc" || type == "mc") {
                 context.textAlign = "center";
