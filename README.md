@@ -26,6 +26,7 @@ To get a local copy up and running, follow these simple steps.
 Before you begin, ensure you have the following installed:
 - Node.js
 - npm
+- Typescript
 ```bash
 npm install npm@latest -g
 ```
