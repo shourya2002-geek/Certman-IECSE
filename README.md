@@ -14,7 +14,7 @@ Certman is an in-house certificate generator designed to streamline the process 
 ![Cert Upload](Cert Upload.png)
 ![Certificate Editor](Certificate Editor.png)
 ![Interface](Interface.png)
-![Login Page](Login_Page.png)
+![Login Page](Login Page.png)
 
 ## Getting Started
 
