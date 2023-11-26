@@ -54,6 +54,7 @@ npm install
 
 ```
 npm start
+```
 
 ## Usage
 
