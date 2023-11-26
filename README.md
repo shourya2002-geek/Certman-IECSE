@@ -28,6 +28,7 @@ Before you begin, ensure you have the following installed:
 - npm
 ```bash
 npm install npm@latest -g
+```
 
 
 ## Installation
@@ -36,18 +37,19 @@ npm install npm@latest -g
 
 ```
 git clone https://github.com/shourya2002-geek/Certman-IECSE.git
-
+```
 
 ### Navigate to the project directory
 
 ```
 cd Certman-IECSE
-
+```
 
 ### Install NPM packages
 
 ```
 npm install
+```
 
 
 ### Start the application
