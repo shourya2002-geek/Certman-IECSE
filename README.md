@@ -1,6 +1,6 @@
 # Certman-IECSE
 
-Certman is an in-house certificate generator designed to streamline the process of creating and distributing certificates for various purposes.
+Certman is an in-house certificate generator designed to streamline the process of creating and distributing certificates for various purposes. Created as part of IECSE Manipal, the official Computer Science Club of Manipal Institute of Technology.
 
 ## Features
 
